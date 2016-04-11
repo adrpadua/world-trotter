@@ -14,13 +14,64 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzz-aJ-ChA">
+                                <rect key="frame" x="34" y="120" width="306" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nm6-is-DAJ">
+                                <rect key="frame" x="128" y="171" width="119" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oyd-Sw-sbJ">
+                                <rect key="frame" x="129" y="222" width="117" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9y-Pc-1cE">
+                                <rect key="frame" x="60" y="314" width="254" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="212" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHd-zX-hfg">
+                                <rect key="frame" x="132" y="28" width="111" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nzz-aJ-ChA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1H5-Av-dMh"/>
+                            <constraint firstItem="nzz-aJ-ChA" firstAttribute="top" secondItem="iHd-zX-hfg" secondAttribute="bottom" constant="8" id="55l-Ft-Yn6"/>
+                            <constraint firstItem="iHd-zX-hfg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="8Zb-6V-1OB"/>
+                            <constraint firstItem="Oyd-Sw-sbJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8m8-wb-UKU"/>
+                            <constraint firstItem="Oyd-Sw-sbJ" firstAttribute="centerX" secondItem="nzz-aJ-ChA" secondAttribute="centerX" id="9X7-sB-b3U"/>
+                            <constraint firstItem="iHd-zX-hfg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Arz-FR-ZzL"/>
+                            <constraint firstItem="e9y-Pc-1cE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BV9-9S-jaq"/>
+                            <constraint firstItem="nm6-is-DAJ" firstAttribute="top" secondItem="nzz-aJ-ChA" secondAttribute="bottom" constant="8" id="IwD-fY-9B4"/>
+                            <constraint firstItem="nm6-is-DAJ" firstAttribute="centerX" secondItem="nzz-aJ-ChA" secondAttribute="centerX" id="RH9-bQ-FP5"/>
+                            <constraint firstItem="Oyd-Sw-sbJ" firstAttribute="top" secondItem="nm6-is-DAJ" secondAttribute="bottom" constant="8" id="SLR-oQ-1ag"/>
+                            <constraint firstItem="e9y-Pc-1cE" firstAttribute="centerX" secondItem="nzz-aJ-ChA" secondAttribute="centerX" id="U3K-kY-JeO"/>
+                            <constraint firstItem="iHd-zX-hfg" firstAttribute="centerX" secondItem="nzz-aJ-ChA" secondAttribute="centerX" id="Umb-J7-1NB"/>
+                            <constraint firstItem="nm6-is-DAJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hwq-0W-9Ll"/>
+                            <constraint firstItem="e9y-Pc-1cE" firstAttribute="top" secondItem="Oyd-Sw-sbJ" secondAttribute="bottom" constant="8" id="jQZ-DA-hia"/>
+                            <constraint firstItem="iHd-zX-hfg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v2b-aT-ppS"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="316.5" y="394.5"/>
         </scene>
     </scenes>
 </document>
