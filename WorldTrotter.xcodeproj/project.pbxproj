@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A09E2D631CBDAA2F00C96201 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A09E2D621CBDAA2F00C96201 /* MapKit.framework */; };
 		A0B3C6B91CBC3FE200DB6458 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3C6B81CBC3FE200DB6458 /* AppDelegate.swift */; };
 		A0B3C6BE1CBC3FE200DB6458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B3C6BC1CBC3FE200DB6458 /* Main.storyboard */; };
 		A0B3C6C01CBC3FE200DB6458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B3C6BF1CBC3FE200DB6458 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A09E2D621CBDAA2F00C96201 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A0B3C6B51CBC3FE200DB6458 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B3C6B81CBC3FE200DB6458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0B3C6BD1CBC3FE200DB6458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A09E2D631CBDAA2F00C96201 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +41,7 @@
 		A0B3C6AC1CBC3FE200DB6458 = {
 			isa = PBXGroup;
 			children = (
+				A09E2D621CBDAA2F00C96201 /* MapKit.framework */,
 				A0B3C6B71CBC3FE200DB6458 /* WorldTrotter */,
 				A0B3C6B61CBC3FE200DB6458 /* Products */,
 			);
