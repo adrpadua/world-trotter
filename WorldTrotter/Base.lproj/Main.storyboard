@@ -101,6 +101,16 @@
             </objects>
             <point key="canvasLocation" x="506" y="388"/>
         </scene>
+        <!--Web-->
+        <scene sceneID="Sub-q1-BsQ">
+            <objects>
+                <viewController id="BKN-Ka-MMW" customClass="WebViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Web" image="ConvertIcon" id="d1a-aq-JFs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZUl-LJ-9eO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="506" y="1088"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="BFP-FB-Q5A">
             <objects>
@@ -113,6 +123,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="NrK-z8-f5L"/>
                         <segue destination="sFn-MI-uUu" kind="relationship" relationship="viewControllers" id="wEm-3L-GBq"/>
+                        <segue destination="BKN-Ka-MMW" kind="relationship" relationship="viewControllers" id="qmG-D9-SX2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="axL-5U-YUT" userLabel="First Responder" sceneMemberID="firstResponder"/>

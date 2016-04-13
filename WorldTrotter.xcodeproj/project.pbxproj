@@ -14,6 +14,7 @@
 		A0B3C6C01CBC3FE200DB6458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B3C6BF1CBC3FE200DB6458 /* Assets.xcassets */; };
 		A0B3C6C31CBC3FE200DB6458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B3C6C11CBC3FE200DB6458 /* LaunchScreen.storyboard */; };
 		A0B3C6CB1CBC484700DB6458 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3C6CA1CBC484700DB6458 /* ConversionViewController.swift */; };
+		A0F2D13C1CBED9F8002A0B13 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F2D13B1CBED9F8002A0B13 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A0B3C6C21CBC3FE200DB6458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0B3C6C41CBC3FE200DB6458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0B3C6CA1CBC484700DB6458 /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
+		A0F2D13B1CBED9F8002A0B13 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				A0B3C6CA1CBC484700DB6458 /* ConversionViewController.swift */,
 				A09E2D641CBDF14E00C96201 /* MapViewController.swift */,
+				A0F2D13B1CBED9F8002A0B13 /* WebViewController.swift */,
 				A0B3C6B81CBC3FE200DB6458 /* AppDelegate.swift */,
 				A0B3C6BC1CBC3FE200DB6458 /* Main.storyboard */,
 				A0B3C6BF1CBC3FE200DB6458 /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 				A0B3C6B91CBC3FE200DB6458 /* AppDelegate.swift in Sources */,
 				A09E2D651CBDF14E00C96201 /* MapViewController.swift in Sources */,
 				A0B3C6CB1CBC484700DB6458 /* ConversionViewController.swift in Sources */,
+				A0F2D13C1CBED9F8002A0B13 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

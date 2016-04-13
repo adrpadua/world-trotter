@@ -9,12 +9,21 @@
 import MapKit
 import UIKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, MKMapViewDelegate {
     
     var mapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let button   = UIButton(type: UIButtonType.System) as UIButton
+        button.frame = CGRectMake(100, 100, 100, 50)
+        button.backgroundColor = UIColor.greenColor()
+        button.setTitle("Test Button", forState: UIControlState.Normal)
+        button.addTarget(self, action: #selector(MapViewController.buttonPressed(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        
+        self.view.addSubview(button)
+        
         
         print("MapViewController loaded its view.")
     }
@@ -54,5 +63,9 @@ class MapViewController: UIViewController {
         default:
             break
         }
+    }
+    
+    func buttonPressed(object: AnyObject) {
+        
     }
 }
