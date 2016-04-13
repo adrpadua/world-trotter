@@ -27,7 +27,7 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
             view.backgroundColor = UIColor.lightGrayColor()
         }
         else {
-            view.backgroundColor = UIColor.darkGrayColor()
+            print("Hello")
         }
     }
     
