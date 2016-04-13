@@ -12,18 +12,12 @@ import UIKit
 class MapViewController: UIViewController, MKMapViewDelegate {
     
     var mapView: MKMapView!
+    var locationManager: CLLocationManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let button   = UIButton(type: UIButtonType.System) as UIButton
-        button.frame = CGRectMake(100, 100, 100, 50)
-        button.backgroundColor = UIColor.greenColor()
-        button.setTitle("Test Button", forState: UIControlState.Normal)
-        button.addTarget(self, action: #selector(MapViewController.buttonPressed(_:)), forControlEvents: UIControlEvents.TouchUpInside)
-        
-        self.view.addSubview(button)
-        
+        mapView.delegate = self
+        locationManager = CLLocationManager()
         
         print("MapViewController loaded its view.")
     }
@@ -50,6 +44,21 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         topConstraint.active = true
         leadingConstraint.active = true
         trailingConstraint.active = true
+        
+        let showLocButton = UIButton(type: .System)
+        showLocButton.setTitle("Show Loc", forState: .Normal)
+        showLocButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.view.addSubview(showLocButton)
+        showLocButton.addTarget(self, action: #selector(MapViewController.showLocButton(_:)), forControlEvents: .TouchUpInside)
+        
+        let topButtonConstraint = showLocButton.topAnchor.constraintEqualToAnchor(segmentedControl.bottomAnchor, constant: 8)
+        let leadingButtonConstraint = showLocButton.leadingAnchor.constraintEqualToAnchor(margins.leadingAnchor)
+        let trailingButtonConstraint = showLocButton.trailingAnchor.constraintEqualToAnchor(margins.trailingAnchor)
+        
+        topButtonConstraint.active = true
+        leadingButtonConstraint.active = true
+        trailingButtonConstraint.active = true
     }
     
     func mapTypeChanged(segControl: UISegmentedControl) {
@@ -65,7 +74,13 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         }
     }
     
-    func buttonPressed(object: AnyObject) {
-        
+    func showLocButton(object: AnyObject) {
+        locationManager.requestWhenInUseAuthorization()
+        mapView.showsUserLocation = true
+    }
+    
+    func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
+        let zoomedInCurrentLocation = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 500, 500)
+        mapView.setRegion(zoomedInCurrentLocation, animated: true)
     }
 }
